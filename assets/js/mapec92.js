@@ -115,7 +115,7 @@ function MapClass(options){
                         map: map,
                         animation: google.maps.Animation.DROP,
                         position: new google.maps.LatLng(b.coords.latitude, b.coords.longitude),
-                        icon: './icons/your-location.png'
+                        icon: './assets/icons/your-location.png'
                     })
                     userLocation = e;
                 }, function() {})
@@ -148,7 +148,7 @@ function MapClass(options){
         j.style.margin = "5px";
         j.style.width = "18px";
         j.style.height = "18px";
-        j.style.backgroundImage = "url(./icons/mylocation-sprite-2x.png)";
+        j.style.backgroundImage = "url(./assets/icons/mylocation-sprite-2x.png)";
         j.style.backgroundSize = "180px 18px";
         j.style.backgroundPosition = "0 0";
         j.style.backgroundRepeat = "no-repeat";
@@ -181,7 +181,7 @@ function MapClass(options){
                         map: g,
                         animation: google.maps.Animation.DROP,
                         position: c,
-                        icon: './icons/your-location.png'
+                        icon: './assets/icons/your-location.png'
                     });
                     userLocation = k;
                     k.setPosition(c);
@@ -199,7 +199,7 @@ function MapClass(options){
         jI.style.margin = "5px";
         jI.style.width = "18px";
         jI.style.height = "18px";
-        jI.style.backgroundImage = "url(./icons/zoom-in-out-button.png)";
+        jI.style.backgroundImage = "url(./assets/icons/zoom-in-out-button.png)";
         jI.style.backgroundSize = "240px 108px";
         jI.style.backgroundPosition = "-3px -63px";
         jI.style.backgroundRepeat = "no-repeat";
@@ -212,7 +212,7 @@ function MapClass(options){
         jII.style.margin = "5px";
         jII.style.width = "18px";
         jII.style.height = "18px";
-        jII.style.backgroundImage = "url(./icons/zoom-in-out-button.png)";
+        jII.style.backgroundImage = "url(./assets/icons/zoom-in-out-button.png)";
         jII.style.backgroundSize = "240px 108px";
         jII.style.backgroundPosition = "-3px -87px";
         jII.style.backgroundRepeat = "no-repeat";
@@ -303,7 +303,7 @@ function MapCluster(map, markers){
         gridSize: 50,
         averageCenter:true,
         styles: [{
-            url: './icons/pin-group1.png',
+            url: './assets/icons/pin-group1.png',
             height: 50,
             width: 74,
             textColor: '#fff',

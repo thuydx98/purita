@@ -350,7 +350,7 @@ $( document ).ready(function() {
                                         lng: parseFloat(location[1]),
                                         lat: parseFloat(location[0])
                                     },
-                                    icon: './icons/marker-icon.png',
+                                    icon: './assets/icons/marker-icon.png',
                                     OutletCode: data.Result[i].OutletCode
                                 },function(){
 	                        		$(".search .result").hide();
@@ -375,7 +375,7 @@ $( document ).ready(function() {
                                     lng: parseFloat(location[1]),
                                     lat: parseFloat(location[0])
                                 },
-                                icon: './icons/marker-icon.png',
+                                icon: './assets/icons/marker-icon.png',
                                 OutletCode: call.OutletCode
                             },function(){
                         		$(".search .result").hide();
@@ -397,7 +397,7 @@ $( document ).ready(function() {
                         return function() {
                             $('.outlet-all .item').hide();
                             $('.outlet-all .text-center').remove();
-							$('.outlet-all').append('<div class="text-center"><br /><p><img src="./icons/loading_icon.gif" /></p><p>Đang tải dữ liệu...</p></div>');
+							$('.outlet-all').append('<div class="text-center"><br /><p><img src="./assets/icons/loading_icon.gif" /></p><p>Đang tải dữ liệu...</p></div>');
                             clearTimeout(timer);
                             timer = setTimeout(function() {
                                 // console.log('bounds_changed');
@@ -431,7 +431,7 @@ $( document ).ready(function() {
                                                         lng: parseFloat(location[1]),
                                                         lat: parseFloat(location[0])
                                                     },
-                                                    icon: './icons/marker-icon.png',
+                                                    icon: './assets/icons/marker-icon.png',
                                                     OutletCode: data.Result[i].OutletCode
                                                 });
                                                 markerCluster.addMarker(f);
@@ -611,7 +611,7 @@ $( document ).ready(function() {
                 searchTimeOut = null;
             }
 
-            $('.search .result .ct-box').html('<div class="text-center"><br /><p><img src="./icons/loading_icon.gif" /></p><p>Đang tải dữ liệu...</p></div>');
+            $('.search .result .ct-box').html('<div class="text-center"><br /><p><img src="./assets/icons/loading_icon.gif" /></p><p>Đang tải dữ liệu...</p></div>');
 
             searchTimeOut = setTimeout(function() {
                 var vitri = [map.location.longitude, map.location.latitude];
