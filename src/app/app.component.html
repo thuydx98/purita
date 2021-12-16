@@ -1,0 +1,132 @@
+<div id="panel"></div>
+<div class="loading">
+  <div class="bottle-w">
+    <div class="top"><img src="assets/images/vh_01.png"></div>
+    <div class="bottom animation-full"><img src="assets/images/vh_02.png"></div>
+  </div>
+</div>
+<div class="overplay-mobile hidden-sm hidden-md hidden-lg"></div>
+
+<!-- Sidebar -->
+<div class="sidebar nav-mobile hidden-sm hidden-md hidden-lg">
+  <ul class="main-menu">
+    <li [ngClass]="{active: activeUrl === '/'}"><a href="">Trang chủ</a></li>
+    <li [ngClass]="{active: activeUrl === '/san-pham'}"><a href="san-pham">Sản phẩm</a></li>
+    <li [ngClass]="{active: activeUrl === '/tin-tuc-su-kien'}"><a href="tin-tuc-su-kien">Tin tức & Sự kiện</a></li>
+    <li [ngClass]="{active: activeUrl === '/lien-he'}"><a href="lien-he">Liên hệ</a></li>
+  </ul>
+  <div class="hotline">
+    <a href="tel:02743818288">HOTLINE 0274 381 8288</a>
+  </div>
+</div>
+<!-- /#sidebar-wrapper -->
+<!-- <div id="content-wrapper"> -->
+<div id="page-wrapper" class="container-w">
+  <header class="header-main" [ngClass]="{white: activeUrl == '/lien-he' || activeUrl == '/tin-tuc-su-kien'}">
+    <div class="top-nav">
+      <div class="btn-nav hidden-sm hidden-md hidden-lg">
+        <div class="o-grid__item">
+          <button class="c-hamburger c-hamburger--htx">
+            <span>toggle menu</span>
+          </button>
+        </div>
+      </div>
+      <div class="call-right">
+        <div class="call">
+          <a href="https://docs.google.com/uc?id=0B0jH18Lft7ypSmRjdWg1c082Y2M" download target="blank">
+            Gọi nước bình 20 lít <i class="fa fa-caret-right" aria-hidden="true"></i>
+          </a>
+          <img src="assets/images/bottle_top.png" alt="">
+        </div>
+        <div class="close-map">
+          <span class="text">Đóng bản đồ</span>
+          <div class="btn-close-map">
+            <div class="o-grid__item">
+              <button class="c-hamburger c-hamburger--htx is-active">
+                <span>toggle menu</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hotline">
+        <span>Hotline</span>
+        <a href="tel:02743818288">0274 381 8288</a>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li [ngClass]="{active: activeUrl === '/'}"><a href="">Trang chủ</a></li>
+        <!-- <li class=""><a href="cau-chuyen-purita">Câu chuyện purita</a></li> -->
+        <li [ngClass]="{active: activeUrl === '/san-pham'}"><a href="san-pham">Sản phẩm</a></li>
+        <li class="logo"><a href="" class="a-logo"><img alt="Purita" src="assets/images/logo.png"></a></li>
+        <!-- <li class=""><a href="gioi-thieu">Giới thiệu</a></li> -->
+        <li [ngClass]="{active: activeUrl === '/tin-tuc-su-kien'}"><a href="tin-tuc-su-kien">Tin tức & Sự kiện</a></li>
+        <li [ngClass]="{active: activeUrl === '/lien-he'}"><a href="lien-he">Liên hệ</a></li>
+      </ul>
+      <div class="logo-mobile hidden-sm hidden-md hidden-lg">
+        <a href="/"><img alt="" src="assets/images/logo.png"></a>
+      </div>
+    </div>
+  </header>
+  <!-- Map -->
+  <div class="map-w">
+    <div class="map" id="map">
+
+    </div>
+    <div class="search">
+      <div class="input-search">
+        <i class="fa fa-circle-o" aria-hidden="true"></i>
+        <input type="text" placeholder="Nhập quận bạn muốn tìm (VD: Q10)">
+        <div class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></div>
+      </div>
+      <div class="list-box result">
+        <div class="box" style="display:block;">
+          <div class="ct-box">
+          </div>
+        </div>
+      </div>
+      <!-- end-result -->
+      <div class="list-box">
+        <div class="tab-mobile row hidden-sm hidden-md hidden-lg">
+          <div class="tab" data-id="2">Đại lý gần nhất</div>
+          <div class="tab active" data-id="1">Đại lý đã đặt</div>
+        </div>
+        <div class="box box-1 active">
+          <div class="head-box hidden-xs">Đại lý đã đặt</div>
+          <div class="ct-box outlet-all-call">
+            <!-- end-item -->
+          </div>
+        </div>
+        <!-- end-box -->
+        <div class="box box-2">
+          <div class="head-box hidden-xs">Danh sách các đại lý gần nhất:</div>
+          <div class="ct-box outlet-all">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <footer>
+    <div class="container">
+      <div class="copyright col-sm-4 col-xs-12">
+        <span>Công ty TNHH SX TM DV TÂN THỊNH NIÊU</span> <br>
+        <span>(0274) 381 8288 - 0937 857 397</span> <br>
+        <span>260, Đ. 30/4, Chánh Nghĩa, Thủ Dầu Một, Bình Dương</span>
+      </div>
+      <div class="logo-ft col-sm-4 hidden-xs">
+      </div>
+      <div class="social col-sm-4 col-xs-12">
+        <span>Theo dõi chúng tôi tại</span>
+        <a href="https://www.facebook.com/Nước-suối-Purita-390908994340133" target="_blank"><i class="i-fb"></i></a>
+      </div>
+    </div>
+    <div class="backtotop">
+      <i class="fa fa-caret-up" aria-hidden="true"></i>
+    </div>
+  </footer>
