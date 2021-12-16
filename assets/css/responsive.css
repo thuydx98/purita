@@ -1335,13 +1335,14 @@ header.header-main .top-nav .call-right.active .close-map {
 header.header-main .top-nav .call-right .call {
   cursor: pointer;
 }
-header.header-main .top-nav .call-right .call span {
+header.header-main .top-nav .call-right .call a {
   color: #fff;
   display: inline-block;
   padding-right: 10px;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
+  text-decoration: none;
 }
 header.header-main .top-nav .call-right .call i {
   color: #fff;
@@ -1356,8 +1357,8 @@ header.header-main .top-nav .call-right .call:focus {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
-header.header-main .top-nav .call-right .call:hover span,
-header.header-main .top-nav .call-right .call:focus span {
+header.header-main .top-nav .call-right .call:hover a,
+header.header-main .top-nav .call-right .call:focus a {
   color: #8fec8a;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -1728,7 +1729,7 @@ header.header-main .navigation ul {
 header.header-main .navigation ul li {
   list-style: none;
   display: inline-block;
-  padding: 0px 28px;
+  padding: 0px 40px;
   position: relative;
   top: -10px;
   transition: all 0.3s;
@@ -1747,32 +1748,32 @@ header.header-main .navigation ul li.logo img {
 }
 @media (max-width: 1200px) {
   header.header-main .navigation ul li {
-    padding: 0px 26px;
+    padding: 0px 32px;
   }
 }
 @media (max-width: 1170px) {
   header.header-main .navigation ul li {
-    padding: 0px 18px;
+    padding: 0px 28px;
   }
 }
 @media (max-width: 1125px) {
   header.header-main .navigation ul li {
-    padding: 0px 14px;
+    padding: 0px 26px;
   }
 }
 @media (max-width: 1025px) {
   header.header-main .navigation ul li {
-    padding: 0px 8px;
+    padding: 0px 24px;
   }
 }
 @media (max-width: 928px) {
   header.header-main .navigation ul li {
-    padding: 0px 5px;
+    padding: 0px 22px;
   }
 }
 @media (max-width: 898px) {
   header.header-main .navigation ul li {
-    padding: 0px 3px;
+    padding: 0px 20px;
   }
   header.header-main .navigation ul li.logo img {
     width: 100px;
@@ -2070,7 +2071,7 @@ footer {
 }
 footer .copyright {
   text-align: left;
-  padding: 60px 0;
+  padding: 32px 0;
 }
 @media (max-width: 767px) {
   footer .copyright {
@@ -3908,7 +3909,7 @@ footer .social a i.i-fb:hover {
   right: 0;
   margin: auto;
 }
-.gallery-productlisting .caption-box a {
+.gallery-productlisting .caption-box div {
   font-family: SVN_CeraMedium;
   font-size: 18px;
   line-height: 22px;
@@ -3924,7 +3925,7 @@ footer .social a i.i-fb:hover {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
-.gallery-productlisting .caption-box a .h-cap {
+.gallery-productlisting .caption-box div .h-cap {
   position: relative;
   top: 50%;
   margin: auto;
@@ -3935,8 +3936,8 @@ footer .social a i.i-fb:hover {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
 }
-.gallery-productlisting .caption-box a:hover,
-.gallery-productlisting .caption-box a:focus {
+.gallery-productlisting .caption-box div:hover,
+.gallery-productlisting .caption-box div:focus {
   text-decoration: none;
   color: #0b4a91;
   transition: all 0.3s;
