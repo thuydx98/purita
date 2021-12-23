@@ -3,7 +3,7 @@ var makerlh = [];
 var maplh;
 $(document).ready(function () {
   maplh = new google.maps.Map(document.getElementById("maplh"), {
-    zoom: 11,
+    zoom: 16,
     center: new google.maps.LatLng(10.9701064, 106.6703104),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     disableDefaultUI: true,

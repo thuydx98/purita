@@ -2050,11 +2050,10 @@ header.header-main.white .navigation ul li a:before {
 }
 footer {
   width: 100%;
-  height: 140px;
   background-image: url(../images/banners/bgft.jpg);
   position: relative;
   background-color: #0c4b92;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -2079,8 +2078,8 @@ footer .copyright {
     padding: 2px 0;
   }
 }
-footer .copyright span {
-  font-size: 14px;
+footer .copyright p {
+  font-size: 17.5px;
   font-family: SVN_Cera;
   color: #fff;
 }
@@ -2108,13 +2107,12 @@ footer .social {
     padding: 2px 0;
   }
 }
-footer .social span {
-  font-size: 14px;
+footer .social p {
+  font-size: 17.5px;
   font-family: SVN_Cera;
   color: #fff;
   position: relative;
   top: -15px;
-  margin-right: 10px;
 }
 @media (max-width: 991px) {
   footer .social span {
@@ -2129,24 +2127,19 @@ footer .social span {
 footer .social a {
   display: inline-block;
 }
+
 footer .social a i {
-  width: 41px;
-  height: 41px;
-  background-image: url(../images/banners/icon_ft.png);
+  width: 62px;
+  height: 62px;
   background-repeat: no-repeat;
   display: block;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
-  -webkit-transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
-  -moz-transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
-  -o-transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
-  transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
+  background-size: contain;
 }
+
 footer .social a i.i-pic {
   background-position: 0 0;
 }
+
 footer .social a i.i-pic:hover {
   background-position: 0 -43px;
   transition: all 0.3s;
@@ -2158,20 +2151,25 @@ footer .social a i.i-pic:hover {
   -o-transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
   transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
 }
+
 footer .social a i.i-fb {
-  background-position: -59px 0;
-  margin-left: 4px;
+  background-image: url(https://thachbich.com.vn/temp/default/css//images/ion_fb.png);
 }
-footer .social a i.i-fb:hover {
-  background-position: -59px -43px;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
-  -webkit-transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
-  -moz-transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
-  -o-transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
-  transition-timing-function: cubic-bezier(0.97, 0.06, 0.19, 0.87);
+
+footer .social a i.i-zalo {
+  margin-left: 15px;
+  background-image: url(https://thachbich.com.vn/temp/default/css//images/ic_zalo.png);
+}
+
+footer .social a i.i-fb:hover, footer .social a i.i-zalo:hover {
+  -webkit-transition: all 500ms ease-out 0s;
+  -moz-transition: all 500ms ease-out 0s;
+  -o-transition: all 500ms ease-out 0s;
+  transition: all 500ms ease-out 0s;
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .backtotop {
   width: 40px;
@@ -3899,7 +3897,8 @@ footer .social a i.i-fb:hover {
 .gallery-productlisting .caption-box {
   width: 340px;
   height: 219px;
-  background: url(../images/banners/bgcaption-gallery.jpg) no-repeat center center;
+  background: url(../images/banners/bgcaption-gallery.jpg) no-repeat center
+    center;
   position: absolute;
   z-index: 10;
   padding: 20px;
@@ -5316,7 +5315,8 @@ footer .social a i.i-fb:hover {
 }
 .section2_story1 .bottom {
   height: 871px;
-  background: url(../images/banners/bgbottom_sec2_story1.jpg) no-repeat top center;
+  background: url(../images/banners/bgbottom_sec2_story1.jpg) no-repeat top
+    center;
   background-size: cover;
   position: relative;
 }
@@ -5409,7 +5409,8 @@ footer .social a i.i-fb:hover {
   }
   .section2_story1 .top {
     height: 360px;
-    background: url(../images/banners/bgtop_sec2_story1.png) no-repeat top center;
+    background: url(../images/banners/bgtop_sec2_story1.png) no-repeat top
+      center;
     background-size: cover;
   }
 }
@@ -5785,12 +5786,13 @@ img {
   background-color: #c5c5c5;
 }
 .section2_contact .info-w .row {
-  border-bottom: 1px solid #363636;
-  padding: 30px 10px;
+  border-bottom: 1px solid grey;
+  padding: 20px 30px;
   cursor: pointer;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
+  background: #eaeaea;
 }
 .section2_contact .info-w .row .title {
   color: #363636;
@@ -5805,10 +5807,14 @@ img {
   font-size: 20px;
   margin-right: 5px;
 }
-.section2_contact .info-w .row .info span {
+.section2_contact .info-w .row .info a {
   color: #363636;
   font-family: "SVN_Cera";
   font-size: 16px;
+  text-decoration: none;
+}
+.section2_contact .info-w .row .info a:hover {
+  color: #5492db;
 }
 .section2_contact .info-w .row:hover {
   transition: all 0.3s;
@@ -5817,7 +5823,7 @@ img {
   background: #eaeaea;
 }
 .section2_contact .map {
-  height: 370px;
+  height: 395px;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -5971,6 +5977,10 @@ img {
   font-family: "SVN_Cera";
   position: relative;
   font-size: 16px;
+}
+.section1_newsdetail .content-w .content .detail img {
+  width: -webkit-fill-available;
+  margin-bottom: 5px;
 }
 .section1_newsdetail .content-w .content .des {
   color: #959595;
@@ -6281,7 +6291,9 @@ img {
   bottom: 25px;
   width: 50px;
   height: 50px;
-  background: url(../images/banners/investment_down_ic.png) no-repeat center center, #fff;
+  background: url(../images/banners/investment_down_ic.png) no-repeat center
+      center,
+    #fff;
   border-radius: 100px;
   cursor: pointer;
 }
@@ -6371,7 +6383,8 @@ img {
   white-space: nowrap;
   display: inline-block;
   margin-top: 5px;
-  background: url(../images/banners/investment_email_ic.png) no-repeat left center;
+  background: url(../images/banners/investment_email_ic.png) no-repeat left
+    center;
 }
 .section2_inves .block2 .phone {
   line-height: 60px;
@@ -6380,7 +6393,8 @@ img {
   font-size: 16px;
   white-space: nowrap;
   padding-left: 70px;
-  background: url(../images/banners/investment_phone_ic.png) no-repeat left center;
+  background: url(../images/banners/investment_phone_ic.png) no-repeat left
+    center;
 }
 .section2_inves .block2 .phone span {
   color: #8fec8a;
@@ -6463,7 +6477,9 @@ img {
   bottom: 25px;
   width: 50px;
   height: 50px;
-  background: url(../images/banners/investment_down_ic.png) no-repeat center center, #fff;
+  background: url(../images/banners/investment_down_ic.png) no-repeat center
+      center,
+    #fff;
   border-radius: 100px;
   cursor: pointer;
 }
