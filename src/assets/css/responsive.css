@@ -2060,12 +2060,20 @@ footer {
 }
 @media (max-width: 767px) {
   footer {
-    height: 80px;
+    height: auto;
     padding: 4px 0;
     background-image: none;
     background-color: #0b4a91;
     background-size: cover;
     -webkit-ackground-size: cover;
+  }
+
+  footer .social {
+    margin-top: 20px;
+  }
+
+  footer .social p {
+    margin-bottom: 0;
   }
 }
 footer .copyright {
@@ -2100,6 +2108,7 @@ footer .logo-ft {
 footer .social {
   text-align: right;
   padding: 47px 0;
+  text-align: center;
 }
 @media (max-width: 767px) {
   footer .social {
@@ -2153,12 +2162,12 @@ footer .social a i.i-pic:hover {
 }
 
 footer .social a i.i-fb {
-  background-image: url(https://thachbich.com.vn/temp/default/css//images/ion_fb.png);
+  background-image: url(../icons/ion_fb.png);
 }
 
 footer .social a i.i-zalo {
   margin-left: 15px;
-  background-image: url(https://thachbich.com.vn/temp/default/css//images/ic_zalo.png);
+  background-image: url(../icons/ic_zalo.png);
 }
 
 footer .social a i.i-fb:hover, footer .social a i.i-zalo:hover {
